@@ -11,7 +11,7 @@ int bisearch(int x) {
 	int high = n - 1;
 	while (low <= high)
 	{
-		int mid = (low + high / 2);
+		int mid = (low + high) / 2;
 		if (v[mid] == x) return 1;
 		else if (v[mid] > x) high = mid - 1;
 		else if (v[mid] < x) low = mid - 1;
