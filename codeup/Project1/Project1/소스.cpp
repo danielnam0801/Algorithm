@@ -1,18 +1,21 @@
-#include<iostream>
-#include<queue>
-#include<deque>
 
+#include <iostream>
+#include <cmath>
 using namespace std;
-deque<int> dq;
-
-queue<int> q;
+void hanoi(int n, int start, int to, int bypass)
+{
+    if (n == 1)
+        printf("%d %d\n", start, to);
+    else
+    {
+        hanoi(n - 1, start, bypass, to);
+        printf("%d %d\n", start, to);
+        hanoi(n - 1, bypass, to, start);
+    }
+}
 int main() {
-	dq.push_back(1);
-	dq.push_front(2);
-	dq.pop_front();
-	dq.pop_back();
-	q.push(1);
-	q.pop();
-	q.front();
-
+    int num;
+    cin >> num;
+    cout << (int)pow(num,2) - 1 << "\n";
+    hanoi(num, 1, 3, 2);
 }
