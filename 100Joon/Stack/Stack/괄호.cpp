@@ -1,10 +1,11 @@
 #include<iostream>
 #include<stack>
+#include<string>
 using namespace std;
 
 int main() {
-	int n;
-	cin >> n;
+	string s;
+	cin >> s;
 	stack<int> str;
 
 	for (int i = 0; i < n; i++) {
@@ -24,10 +25,4 @@ int main() {
 
 	cout << sum;
 }
-#include<iostream>
-#include<stack>
-using namespace std;
 
-int main() {
-	
-}
