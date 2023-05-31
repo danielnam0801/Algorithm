@@ -52,7 +52,6 @@ using namespace std;
 //    else {
 //        temp->next = s_top;
 //        s_top = temp;
-//        // 채워넣으세요(2줄)
 //    }
 //}
 //
@@ -60,7 +59,6 @@ using namespace std;
 //    if (isEmpty()) return -1;
 //    NODE* delTemp = s_top;
 //    int rData = delTemp->data;
-//    // 채워넣으세요(2줄)
 //    //delete s_top;
 //    //s_top = delTemp->next;
 //    s_top = delTemp->next;
@@ -148,7 +146,6 @@ using namespace std;
 //    else {
 //        q_rear->next = temp;
 //        q_rear = temp;
-//        // 채워넣으세요(2줄)
 //    }
 //    q_count++;
 //}
@@ -160,7 +157,6 @@ using namespace std;
 //    }
 //    NODE* delTemp = q_front;
 //    int rData = delTemp->data;
-//    // 채워넣으세요(2줄)
 //    q_front = delTemp->next;
 //    delete delTemp;
 //    q_count--;
