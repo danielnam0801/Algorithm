@@ -22,20 +22,13 @@ int main() {
 
 	string pokeName;
 	for (int i = 0; i < m; i++) {
-		cin >> pokeName;
 		
-		bool isNum = true;
-		for (int i = 0; i < pokeName.size(); i++) {
-			if (!isdigit(pokeName[i])) {
-				isNum = false;
-				break;
-			}
-		}
-		if (isNum) {
-			cout << pokeNum[stoi(pokeName)] << endl;
+		cin >> pokeName;
+		if (isdigit(pokeName[0])){
+			cout << pokeNum[stoi(pokeName)] << '\n';
 		}
 		else {
-			cout << pokes[pokeName] << endl;
+			cout << pokes[pokeName] << '\n';
 		}
 	}
 }
