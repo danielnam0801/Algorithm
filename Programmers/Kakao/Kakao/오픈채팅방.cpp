@@ -19,7 +19,6 @@ vector<string> solution(vector<string> record) {
         vector<string> info = split(record[i], ' ');
         
         id.push_back(info[1]);
-        ids[info[1]] = info[2]; // info[1] == id, info[2] == nickname
 
         if (info[0] == "Enter") {
             actorders.push_back(1);
@@ -27,6 +26,8 @@ vector<string> solution(vector<string> record) {
         if (info[0] == "Leave") {
             actorders.push_back(0);
         }  
+        if(info[0] == "Change" || info[0] == "Enter")
+            ids[info[1]] = info[2]; // info[1] == id, info[2] == nickname
     }
 
     for (int i = 0; i < actorders.size(); i++) {
@@ -56,7 +57,7 @@ vector<string> split(string input, char delimiter) {
 }
 
 int main() {
-    vector<string> record{ "Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan" };
+    vector<string> record{ "Enter uid1234 Muzi", "Change uid1234 Prodo", "Leave uid1234","Enter uid1234 Prodo","Change uid1234 Ryan" };
 
     vector<string> s = solution(record);
 
