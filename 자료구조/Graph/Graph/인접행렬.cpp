@@ -1,15 +1,20 @@
 #include <iostream>
+#include <stack>
 #include <vector>
+#include <queue>
+#include <math.h>
 using namespace std;
 #define MAX_VTXS 200
 
+
 class AdjMatGraph
 {
-protected:
+public:
 	int size;
 	//char vertices[MAX_VTXS];
 	//int adj[MAX_VTXS][MAX_VTXS];
 	vector<char> vertices;
+	int visited[50];
 	vector<vector<int>> adj;
 public:
 	AdjMatGraph() { reset(); }
@@ -21,6 +26,40 @@ public:
 	void insertEdge(int u, int v) { adj[u][v] = 1; adj[v][u] = 1; }
 	bool isEmpty() { return size == 0; }
 	bool isFull() { return size >= MAX_VTXS; }
+	void resetVisited() {
+		for (int i = 0; i < size; i++) {
+			visited[i] = false;
+		}
+	}
+	bool isLinked(int u, int v) {
+		return getEdge(u, v) != 0;
+	}
+	void DFS(int index) {
+		visited[index] = true;
+		cout << index;
+		
+		for (int x = 0; x < size; x++) {
+			if (isLinked(index, x) && !visited[x]) {
+				DFS(getVertex(index+1));
+			}
+		}
+	}
+	void BFS(int v) {
+		fill_n(visited, MAX_VTXS, -1);
+		queue<int> q;
+		q.push(v);
+		while (!q.empty()) {
+			int i = q.front();
+			q.pop();
+			cout << i;
+			for (int v = 0; v < size; v++) {
+				if (isLinked(i, v) && visited[v] < 0) {
+					q.push(v);
+					visited[v] = visited[i] + 1;
+				}
+			}
+		}
+	}
 	void reset()
 	{
 		size = 0;
@@ -78,6 +117,13 @@ int main() {
 	}
 	cout << "인접 행렬로 표현한 그래프" << endl;
 	g.display();
+	cout << "BFS 탐색=> ";
+	//g.resetVisited();
+	//g.DFS(0);
+	g.BFS(0);
+	for (int i = 0; i < g.size; i++) {
+		cout << g.visited[i] << " ";
+	}
 	return 0;
 }
 
