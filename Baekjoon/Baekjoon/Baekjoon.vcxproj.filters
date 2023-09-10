@@ -1,44 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="리소스 파일">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Gold">
       <UniqueIdentifier>{810ecc01-216e-4e31-843c-360c283f80c5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Silver">
-      <UniqueIdentifier>{5c3a3c75-4593-49d9-9a26-186c5d2f38e4}</UniqueIdentifier>
     </Filter>
     <Filter Include="Bronze">
       <UniqueIdentifier>{fc8483b5-0a8b-4fa4-bf09-b0eb79b0457e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Silver">
+      <UniqueIdentifier>{5c3a3c75-4593-49d9-9a26-186c5d2f38e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Silver\S1">
+      <UniqueIdentifier>{377d6d0c-cfc1-4052-bc35-e4430d5ab96e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Silver\S2">
+      <UniqueIdentifier>{deedc6e2-dc67-4d7a-809b-88cea90cb20c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Silver\S3">
+      <UniqueIdentifier>{eef11974-5d84-44bd-a819-7e6a06c34ced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Silver\S4">
+      <UniqueIdentifier>{e583fe83-2c01-4a44-bb62-46c8e7b851b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Silver\S5">
+      <UniqueIdentifier>{8eab8ccd-e34f-4103-bb69-0849264cc4b4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="S4-1920.cpp">
-      <Filter>Silver</Filter>
-    </ClCompile>
     <ClCompile Include="G1-1300.cpp">
       <Filter>Gold</Filter>
     </ClCompile>
-    <ClCompile Include="10816.cpp">
-      <Filter>Silver</Filter>
-    </ClCompile>
-    <ClCompile Include="12015.cpp">
-      <Filter>Gold</Filter>
-    </ClCompile>
-    <ClCompile Include="S4-1158.cpp">
-      <Filter>Silver</Filter>
-    </ClCompile>
     <ClCompile Include="B2-1159.cpp">
       <Filter>Bronze</Filter>
-    </ClCompile>
-    <ClCompile Include="S4-1269.cpp">
-      <Filter>Silver</Filter>
-    </ClCompile>
-    <ClCompile Include="S4-1302.cpp">
-      <Filter>Silver</Filter>
     </ClCompile>
     <ClCompile Include="B5-1330.cpp">
       <Filter>Bronze</Filter>
@@ -46,23 +39,8 @@
     <ClCompile Include="B3-1547.cpp">
       <Filter>Bronze</Filter>
     </ClCompile>
-    <ClCompile Include="S4-1620.cpp">
-      <Filter>Silver</Filter>
-    </ClCompile>
-    <ClCompile Include="S2-1654.cpp">
-      <Filter>Silver</Filter>
-    </ClCompile>
     <ClCompile Include="G2-1655.cpp">
       <Filter>Gold</Filter>
-    </ClCompile>
-    <ClCompile Include="S4-1764.cpp">
-      <Filter>Silver</Filter>
-    </ClCompile>
-    <ClCompile Include="S4-1940.cpp">
-      <Filter>Silver</Filter>
-    </ClCompile>
-    <ClCompile Include="S2-2075.cpp">
-      <Filter>Silver</Filter>
     </ClCompile>
     <ClCompile Include="B5-2438.cpp">
       <Filter>Bronze</Filter>
@@ -85,38 +63,140 @@
     <ClCompile Include="B2-2979.cpp">
       <Filter>Bronze</Filter>
     </ClCompile>
-    <ClCompile Include="S4-3986.cpp">
-      <Filter>Silver</Filter>
-    </ClCompile>
-    <ClCompile Include="S2-4358.cpp">
-      <Filter>Silver</Filter>
-    </ClCompile>
     <ClCompile Include="G5-5430.cpp">
       <Filter>Gold</Filter>
     </ClCompile>
     <ClCompile Include="B3-2884.cpp">
       <Filter>Bronze</Filter>
     </ClCompile>
-    <ClCompile Include="S2-2805.cpp">
-      <Filter>Silver</Filter>
-    </ClCompile>
-    <ClCompile Include="S2-1535.cpp">
-      <Filter>Silver</Filter>
-    </ClCompile>
     <ClCompile Include="B2-5622.cpp">
       <Filter>Bronze</Filter>
-    </ClCompile>
-    <ClCompile Include="S5-7568.cpp">
-      <Filter>Silver</Filter>
     </ClCompile>
     <ClCompile Include="B5-9086.cpp">
       <Filter>Bronze</Filter>
     </ClCompile>
-    <ClCompile Include="S3-9375.cpp">
-      <Filter>Silver</Filter>
+    <ClCompile Include="G2-12015.cpp">
+      <Filter>Gold</Filter>
+    </ClCompile>
+    <ClCompile Include="B1-10798.cpp">
+      <Filter>Bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="B4-10808.cpp">
+      <Filter>Bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="B2-10809.cpp">
+      <Filter>Bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="B2-10813.cpp">
+      <Filter>Bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="B3-10818.cpp">
+      <Filter>Bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="B2-10870.cpp">
+      <Filter>Bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="B2-10988.cpp">
+      <Filter>Bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="B4-11720.cpp">
+      <Filter>Bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="G5-12865.cpp">
+      <Filter>Gold</Filter>
+    </ClCompile>
+    <ClCompile Include="B4-15552.cpp">
+      <Filter>Bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="G4-25381.cpp">
+      <Filter>Gold</Filter>
+    </ClCompile>
+    <ClCompile Include="B2-25501.cpp">
+      <Filter>Bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="B3-25904.cpp">
+      <Filter>Bronze</Filter>
+    </ClCompile>
+    <ClCompile Include="S1-13335.cpp">
+      <Filter>Silver\S1</Filter>
     </ClCompile>
     <ClCompile Include="S1-2178.cpp">
-      <Filter>Silver</Filter>
+      <Filter>Silver\S1</Filter>
+    </ClCompile>
+    <ClCompile Include="S2-10799.cpp">
+      <Filter>Silver\S2</Filter>
+    </ClCompile>
+    <ClCompile Include="S2-1535.cpp">
+      <Filter>Silver\S2</Filter>
+    </ClCompile>
+    <ClCompile Include="S2-1654.cpp">
+      <Filter>Silver\S2</Filter>
+    </ClCompile>
+    <ClCompile Include="S2-2075.cpp">
+      <Filter>Silver\S2</Filter>
+    </ClCompile>
+    <ClCompile Include="S2-2805.cpp">
+      <Filter>Silver\S2</Filter>
+    </ClCompile>
+    <ClCompile Include="S2-4358.cpp">
+      <Filter>Silver\S2</Filter>
+    </ClCompile>
+    <ClCompile Include="S3-14425.cpp">
+      <Filter>Silver\S3</Filter>
+    </ClCompile>
+    <ClCompile Include="S3-18115.cpp">
+      <Filter>Silver\S3</Filter>
+    </ClCompile>
+    <ClCompile Include="S3-9461.cpp">
+      <Filter>Silver\S3</Filter>
+    </ClCompile>
+    <ClCompile Include="S3-9375.cpp">
+      <Filter>Silver\S3</Filter>
+    </ClCompile>
+    <ClCompile Include="S4-11047.cpp">
+      <Filter>Silver\S4</Filter>
+    </ClCompile>
+    <ClCompile Include="S4-10816.cpp">
+      <Filter>Silver\S4</Filter>
+    </ClCompile>
+    <ClCompile Include="S4-1158.cpp">
+      <Filter>Silver\S4</Filter>
+    </ClCompile>
+    <ClCompile Include="S4-1269.cpp">
+      <Filter>Silver\S4</Filter>
+    </ClCompile>
+    <ClCompile Include="S4-1302.cpp">
+      <Filter>Silver\S4</Filter>
+    </ClCompile>
+    <ClCompile Include="S4-1620.cpp">
+      <Filter>Silver\S4</Filter>
+    </ClCompile>
+    <ClCompile Include="S4-1764.cpp">
+      <Filter>Silver\S4</Filter>
+    </ClCompile>
+    <ClCompile Include="S4-1920.cpp">
+      <Filter>Silver\S4</Filter>
+    </ClCompile>
+    <ClCompile Include="S4-1940.cpp">
+      <Filter>Silver\S4</Filter>
+    </ClCompile>
+    <ClCompile Include="S4-3986.cpp">
+      <Filter>Silver\S4</Filter>
+    </ClCompile>
+    <ClCompile Include="S4-10773.cpp">
+      <Filter>Silver\S4</Filter>
+    </ClCompile>
+    <ClCompile Include="S4-10828.cpp">
+      <Filter>Silver\S4</Filter>
+    </ClCompile>
+    <ClCompile Include="S5-7568.cpp">
+      <Filter>Silver\S5</Filter>
+    </ClCompile>
+    <ClCompile Include="S5-10815.cpp">
+      <Filter>Silver\S5</Filter>
+    </ClCompile>
+    <ClCompile Include="S2-18352.cpp">
+      <Filter>Silver\S2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
