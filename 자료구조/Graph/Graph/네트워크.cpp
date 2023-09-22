@@ -15,8 +15,7 @@ void DFS(int j)
     {
         if (isvisited[i] == false && cmts[i][j] == 1)
         {
-            DFS(j + 1);
-            isvisited[i] = true;
+            DFS(i);
         }
     }
 }
