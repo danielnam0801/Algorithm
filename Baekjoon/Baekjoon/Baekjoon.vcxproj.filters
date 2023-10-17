@@ -204,5 +204,11 @@
     <ClCompile Include="1991.cpp">
       <Filter>Silver\S1</Filter>
     </ClCompile>
+    <ClCompile Include="G5-5639.cpp">
+      <Filter>Gold</Filter>
+    </ClCompile>
+    <ClCompile Include="S2-11725.cpp">
+      <Filter>Silver\S2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
