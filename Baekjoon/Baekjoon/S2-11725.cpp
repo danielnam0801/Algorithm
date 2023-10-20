@@ -26,7 +26,7 @@ int main()
         front = q.front();
         q.pop();
 
-        for (auto i : graph[front])
+        for (auto i : graph[front]) // 연결되어 있는 자식 순회
         {
             if (visited[i] != -1)
                 continue;
