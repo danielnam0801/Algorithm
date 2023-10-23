@@ -12,9 +12,10 @@ map<int, string, greater<int>> album;
 // key : genre에 전체재생빈도 합, value : genre name 
 // 재생빈도 큰 순서대로 정렬
 
-bool compare(const pair<int, int>& left, const pair<int, int>& right)
+
+bool myComparison(const pair<int, int>& a, const pair<int, int>& b)
 {
-    return left.second > right.second;
+    return a.second > b.second;
 }
 
 vector<int> solution(vector<string> genres, vector<int> plays) {
@@ -25,14 +26,14 @@ vector<int> solution(vector<string> genres, vector<int> plays) {
         playfrequencies[genres[i]].push_back({ i, plays[i] }); //장르별 노래 재생 수 추가
     }
 
-    for (auto plays : playfrequencies) //순회
+    for (auto& plays : playfrequencies) //순회
     {
         int sum = 0;
         for (auto playCount : plays.second) //노래별 플레이 수
         {
             sum += playCount.second;
         }
-        sort(plays.second.begin(), plays.second.end(), compare); // 내림차순 정렬
+        sort(plays.second.begin(), plays.second.end(), myComparison); // 내림차순 정렬
         album[sum] = plays.first; //전체 재생 빈도합
     }
 
