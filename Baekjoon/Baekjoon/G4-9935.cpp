@@ -1,6 +1,8 @@
+//https://www.acmicpc.net/problem/9935 문자열 폭발
+
 #include<iostream>
 #include<stack>
-#include<queue>
+#include<algorithm>
 
 using namespace std;
 
@@ -9,52 +11,31 @@ stack<char> chars;
 
 int main()
 {
+	ios_base::sync_with_stdio(false); cin.tie(); cout.tie();
+
 	cin >> str >> boomstr;
-	
-	for(int i = 0; i < str.size(); i++)
+
+	for (int i = 0; i < str.size(); i++)
 	{
-		if (chars.empty() || chars.top() != boomstr[0])
+		chars.push(str[i]);
+		if (chars.size() >= boomstr.size() && str[i] == boomstr.back())
 		{
-			chars.push(str[i]);
-		}
-		else
-		{
-			bool booming = true;
-			int findIdx = i;
-			while (booming)
+			bool isboom = true;
+			for (int j = boomstr.size() - 2; j >= 0; j--)
 			{
-				bool isboom = true;
-				for (int j = 1; j < boomstr.size(); j++)
+				if (str[i + j] != boomstr[j])
 				{
-					if (str[findIdx + j] != boomstr[j])
-					{
-						isboom = false;
-						break;
-					}
+					isboom = false;
+					break;
 				}
-				if (isboom)
-				{
-					
-				}
+			}
+			if (isboom)
+			{
+				chars.pop();
+				i += boomstr.size();
 			}
 		}
 	}
-
-	/*bool isboom = true;
-	for (int j = 1; j < boomstr.size(); j++)
-	{
-		if (str[i + j] != boomstr[j])
-		{
-			isboom = false;
-			break;
-		}
-	}
-	if (isboom)
-	{
-		chars.pop();
-		i += boomstr.size() - 1;
-		continue;
-	}*/
 
 	while (!chars.empty())
 	{
@@ -62,13 +43,8 @@ int main()
 		chars.pop();
 	}
 
-
+	reverse(result.begin(), result.end());
+	//출력
 	if (result.size() == 0) cout << "FRULA";
-	else
-	{
-		for (int i = result.size() - 1; i >= 0; i--)
-		{
-			cout << result[i];
-		}
-	}
+	else cout << result;
 }
