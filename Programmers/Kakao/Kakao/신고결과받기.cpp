@@ -1,4 +1,3 @@
-//20106 남준성
 //https://school.programmers.co.kr/learn/courses/30/lessons/92334?language=cpp "신고결과 받기"
 
 #include<vector>
