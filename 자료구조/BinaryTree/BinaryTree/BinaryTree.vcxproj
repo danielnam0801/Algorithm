@@ -18,6 +18,10 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lower_bound.cpp" />
+    <ClCompile Include="upper_bound.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -138,14 +142,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="C:\Users\user\Downloads\bst.cpp" />
-    <ClCompile Include="C:\Users\user\Downloads\bt (1).cpp" />
-    <ClCompile Include="C:\Users\user\Downloads\main (1).cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="C:\Users\user\Downloads\bt (1).h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
