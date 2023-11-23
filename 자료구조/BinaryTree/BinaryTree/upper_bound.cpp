@@ -26,6 +26,6 @@ int upper_bound(int key)
 int main()
 {
 	int num;
-	cin >> num;
+	cin >> num;	
 	cout << upper_bound(num) << endl;
 }

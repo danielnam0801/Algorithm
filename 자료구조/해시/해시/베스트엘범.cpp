@@ -12,7 +12,6 @@ map<int, string, greater<int>> album;
 // key : genre에 전체재생빈도 합, value : genre name 
 // 재생빈도 큰 순서대로 정렬
 
-
 bool myComparison(const pair<int, int>& a, const pair<int, int>& b)
 {
     return a.second > b.second;

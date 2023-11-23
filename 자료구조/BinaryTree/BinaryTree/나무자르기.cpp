@@ -28,18 +28,19 @@ int search(int k)
     while (left <= right)
     {
         mid = (left + right) / 2;
-        if (treecuter(mid) <= k) // 특정 조건을 만족하는
-            right = mid - 1;
-        else
+        if (treecuter(mid) >= k) // 특정 조건을 만족하는
             left = mid + 1;
+        else
+            right = mid - 1;
 
     }
-    return left;
+    return right;
 }
 
 int main()
 {
-    cin.tie(); cout.tie(); ios_base::sync_with_stdio(false);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL); 
     cin >> N >> M;
     for (int i = 0; i < N; i++)
     {
