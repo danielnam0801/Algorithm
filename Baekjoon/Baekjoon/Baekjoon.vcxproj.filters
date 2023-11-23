@@ -25,6 +25,12 @@
     <Filter Include="Silver\S5">
       <UniqueIdentifier>{8eab8ccd-e34f-4103-bb69-0849264cc4b4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="아직 못푼 문제">
+      <UniqueIdentifier>{d98764cd-a40a-4b78-9eb5-ee54148d0163}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="풀고 있는 문제">
+      <UniqueIdentifier>{3cd8d6bf-1c20-447c-9a29-97dc55bf9e27}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="G1-1300.cpp">
@@ -210,8 +216,8 @@
     <ClCompile Include="S2-11725.cpp">
       <Filter>Silver\S2</Filter>
     </ClCompile>
-    <ClCompile Include="G4-9935.cpp">
-      <Filter>Gold</Filter>
+    <ClCompile Include="G4-9935%28아직 못품%29.cpp">
+      <Filter>아직 못푼 문제</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
