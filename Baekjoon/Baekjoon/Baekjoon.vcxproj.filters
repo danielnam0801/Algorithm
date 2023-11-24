@@ -219,5 +219,11 @@
     <ClCompile Include="G4-9935%28아직 못품%29.cpp">
       <Filter>아직 못푼 문제</Filter>
     </ClCompile>
+    <ClCompile Include="S5-7785.cpp">
+      <Filter>Silver\S5</Filter>
+    </ClCompile>
+    <ClCompile Include="G5-3079.cpp">
+      <Filter>Gold</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
