@@ -225,5 +225,11 @@
     <ClCompile Include="G5-3079.cpp">
       <Filter>Gold</Filter>
     </ClCompile>
+    <ClCompile Include="S1-1931.cpp">
+      <Filter>Silver\S1</Filter>
+    </ClCompile>
+    <ClCompile Include="G5-2293.cpp">
+      <Filter>Gold</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
